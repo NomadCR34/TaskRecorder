@@ -7,7 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import ir.aminr.taskrecorder.db.AppDatabase
+import ir.aminr.taskrecorder.db.database.AppDatabase
 import ir.aminr.taskrecorder.db.dao.TaskDao
 import javax.inject.Singleton
 

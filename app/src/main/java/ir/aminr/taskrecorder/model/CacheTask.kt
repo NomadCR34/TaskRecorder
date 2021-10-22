@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "tasks")
-data class OfflineTask(
+data class CacheTask(
     @ColumnInfo(name = "title")
     var title: String,
     @ColumnInfo(name = "start_date")
@@ -15,5 +15,5 @@ data class OfflineTask(
 ) {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    var id: Int = 0
+    var id: Long = 0
 }

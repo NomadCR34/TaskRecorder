@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ir.aminr.taskrecorder.db.mapper.TaskOfflineMapper
+import ir.aminr.taskrecorder.db.mapper.OfflineTaskMapper
 import javax.inject.Singleton
 
 @Module
@@ -13,6 +13,6 @@ object OfflineMapperModule {
 
     @Provides
     @Singleton
-    fun provideTaskOfflineMapper(): TaskOfflineMapper =
-        TaskOfflineMapper()
+    fun provideTaskOfflineMapper(): OfflineTaskMapper =
+        OfflineTaskMapper()
 }

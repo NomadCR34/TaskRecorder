@@ -5,5 +5,5 @@ data class Task(
     var startDate:Long,
     var endDate:Long
 ){
-    var id:Int = 0
+    var id:Long = 0
 }
