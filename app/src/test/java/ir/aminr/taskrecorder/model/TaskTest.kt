@@ -9,7 +9,7 @@ import org.junit.runners.JUnit4
 class TaskTest {
 
     @Test
-    fun testTask(){
+    fun testTask() {
         val task = Task(
             "Task 1",
             12345,
@@ -18,14 +18,14 @@ class TaskTest {
             id = 1
         }
 
-        assertThat(task.id == 1).isTrue()
+        assertThat(task.id.compareTo(1) == 0).isTrue()
         assertThat(task.title == "Task 1").isTrue()
         assertThat(task.startDate.compareTo(12345) == 0).isTrue()
         assertThat(task.endDate.compareTo(123456) == 0).isTrue()
     }
 
     @Test
-    fun testOfflineTask(){
+    fun testOfflineTask() {
         val task = CacheTask(
             "Task 1",
             12345,
@@ -34,7 +34,7 @@ class TaskTest {
             id = 1
         }
 
-        assertThat(task.id == 1).isTrue()
+        assertThat(task.id.compareTo(1) == 0).isTrue()
         assertThat(task.title == "Task 1").isTrue()
         assertThat(task.startDate.compareTo(12345) == 0).isTrue()
         assertThat(task.endDate.compareTo(123456) == 0).isTrue()
